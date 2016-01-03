@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="animationSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Khv-eW-1FM">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellIdentifier" rowHeight="180" id="rlG-yJ-AxB" customClass="FoodTableViewCell" customModule="animationSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rlG-yJ-AxB" id="zRc-sm-NO5">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="179"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="bxy-l6-CyL">
+                                                    <rect key="frame" x="8" y="9" width="160" height="160"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aaq-OP-nlZ">
+                                                    <rect key="frame" x="177" y="9" width="50" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEB-mM-Zjr">
+                                                    <rect key="frame" x="177" y="38" width="44" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecO-AP-u1V">
+                                                    <rect key="frame" x="177" y="67" width="93" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Cuisine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="314" translatesAutoresizingMaskIntoConstraints="NO" id="SOX-25-xk5">
+                                                    <rect key="frame" x="278" y="9" width="116" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="314" translatesAutoresizingMaskIntoConstraints="NO" id="K8C-Q3-4dt">
+                                                    <rect key="frame" x="278" y="38" width="39" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="314" translatesAutoresizingMaskIntoConstraints="NO" id="5yn-mv-lbc">
+                                                    <rect key="frame" x="278" y="67" width="310" height="102"/>
+                                                    <string key="text">This is the perfect example of best cuisine i have ever have. This is the real taste of Asia i can vouch for this. People use to eat this almost every day. This is called Royal Food. Try this royalty.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="K8C-Q3-4dt" firstAttribute="top" secondItem="PEB-mM-Zjr" secondAttribute="top" id="4u0-tv-gXw"/>
+                                                <constraint firstItem="ecO-AP-u1V" firstAttribute="top" secondItem="PEB-mM-Zjr" secondAttribute="bottom" constant="8" id="5Dn-jc-tNh"/>
+                                                <constraint firstItem="Aaq-OP-nlZ" firstAttribute="top" secondItem="zRc-sm-NO5" secondAttribute="topMargin" constant="1" id="5LR-ad-Ziv"/>
+                                                <constraint firstItem="PEB-mM-Zjr" firstAttribute="top" secondItem="Aaq-OP-nlZ" secondAttribute="bottom" constant="8" id="AUU-Is-G1w"/>
+                                                <constraint firstItem="Aaq-OP-nlZ" firstAttribute="leading" secondItem="bxy-l6-CyL" secondAttribute="trailing" constant="9" id="BCi-5Q-hRk"/>
+                                                <constraint firstItem="SOX-25-xk5" firstAttribute="leading" secondItem="Aaq-OP-nlZ" secondAttribute="trailing" constant="51" id="Kjm-nT-sxg"/>
+                                                <constraint firstItem="ecO-AP-u1V" firstAttribute="leading" secondItem="PEB-mM-Zjr" secondAttribute="leading" id="Mh1-Uu-xvH"/>
+                                                <constraint firstItem="bxy-l6-CyL" firstAttribute="height" relation="lessThanOrEqual" secondItem="zRc-sm-NO5" secondAttribute="height" multiplier="0.89" id="MsG-pb-Fla"/>
+                                                <constraint firstItem="SOX-25-xk5" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="zRc-sm-NO5" secondAttribute="trailingMargin" id="Ofs-Oh-0iv"/>
+                                                <constraint firstItem="5yn-mv-lbc" firstAttribute="leading" secondItem="ecO-AP-u1V" secondAttribute="trailing" constant="8" id="WM8-RC-OU2"/>
+                                                <constraint firstItem="K8C-Q3-4dt" firstAttribute="leading" secondItem="PEB-mM-Zjr" secondAttribute="trailing" constant="57" id="bJg-ft-5oD"/>
+                                                <constraint firstItem="5yn-mv-lbc" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="zRc-sm-NO5" secondAttribute="trailingMargin" id="kFT-3s-YZ8"/>
+                                                <constraint firstItem="bxy-l6-CyL" firstAttribute="width" relation="lessThanOrEqual" secondItem="zRc-sm-NO5" secondAttribute="width" multiplier="0.266" id="p6Q-le-2nl"/>
+                                                <constraint firstItem="bxy-l6-CyL" firstAttribute="centerY" secondItem="zRc-sm-NO5" secondAttribute="centerY" id="qDo-F9-O8l"/>
+                                                <constraint firstItem="SOX-25-xk5" firstAttribute="top" secondItem="Aaq-OP-nlZ" secondAttribute="top" id="s4G-Zu-cvl"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="bxy-l6-CyL" secondAttribute="leading" id="sKK-9q-r8M"/>
+                                                <constraint firstItem="5yn-mv-lbc" firstAttribute="top" secondItem="ecO-AP-u1V" secondAttribute="top" id="tVj-fr-JfG"/>
+                                                <constraint firstItem="K8C-Q3-4dt" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="zRc-sm-NO5" secondAttribute="trailingMargin" id="wiq-W0-Gbm"/>
+                                                <constraint firstItem="PEB-mM-Zjr" firstAttribute="leading" secondItem="Aaq-OP-nlZ" secondAttribute="leading" id="yp1-fP-vbj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellImageView" destination="bxy-l6-CyL" id="7ck-qj-Q4m"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="QtY-il-Zab"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HsS-R4-qqH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Khv-eW-1FM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="4cq-t3-rAu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Khv-eW-1FM" secondAttribute="bottom" id="Mf3-uH-UOh"/>
+                            <constraint firstItem="Khv-eW-1FM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QAW-dR-rvQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Khv-eW-1FM" secondAttribute="trailing" id="TlS-9z-Fl8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Khv-eW-1FM" id="ITI-es-jfE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="428" y="405"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="food" width="160" height="160"/>
+    </resources>
+</document>
